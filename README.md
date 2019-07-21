@@ -9,6 +9,17 @@ To start your Phoenix server:
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
+Additional packages installed:
+  * Bootstrap 4
+  * Fontawesome
+  * LiveView
+
+Examples and routes:
+
+  * Counter - Request directly to LiveView - [`localhost:4000/live/counter`](http://localhost:4000/live/counter)
+  * Counter - Request to normal route/controller/template that render LiveView component/template - `localhost:4000/counter`](http://localhost:4000/counter)
+  * Todos - Request to normal route/controller/template that render LiveView component/template - `localhost:4000/todos`](http://localhost:4000/todos)
+
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
 ## Learn more
