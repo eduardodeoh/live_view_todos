@@ -24,6 +24,13 @@ defmodule LiveViewTodosWeb.TodoLive do
     {:noreply, fetch(socket)}
   end
 
+  def handle_event("remove", id, socket) do
+    todo = Todos.get_todo!(id)
+    Todos.delete_todo(todo)
+
+    {:noreply, fetch(socket)}
+  end
+
   defp fetch(socket) do
     assign(socket, todos: Todos.list_todos())
   end

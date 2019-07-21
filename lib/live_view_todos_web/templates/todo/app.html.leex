@@ -8,5 +8,6 @@
   <div>
     <%= checkbox(:todo, :done, phx_click: "toggle_done", phx_value: todo.id, value: todo.done) %>
     <%= todo.title %>
+    <%= link "Remove", to: "#", phx_click: "remove", phx_value: todo.id, class: "btn btn-danger btn-sm", role: "button" %>
   </div>
 <% end %>
